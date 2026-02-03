@@ -1,10 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://dk1710qearksw"]
 
-[ext_resource type="PackedScene" uid="uid://mgtv5s5xk25u" path="res://R6 fuer game.glb" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://dk0k3e7d4378p" path="res://plattform.glb" id="2_fj7yv"]
 
 [node name="world" type="Node3D"]
 
-[node name="base_character" parent="." instance=ExtResource("1_f3sb7")]
-
-[node name="Camera3D" type="Camera3D" parent="base_character"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.548429, -0.53632385)
+[node name="plattform" parent="." instance=ExtResource("2_fj7yv")]
