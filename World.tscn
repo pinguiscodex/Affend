@@ -4,4 +4,7 @@
 
 [node name="world" type="Node3D"]
 
-[node name="R6 fuer game" parent="." instance=ExtResource("1_f3sb7")]
+[node name="base_character" parent="." instance=ExtResource("1_f3sb7")]
+
+[node name="Camera3D" type="Camera3D" parent="base_character"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.548429, -0.53632385)
