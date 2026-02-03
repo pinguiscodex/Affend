@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://mgtv5s5xk25u"
-path="res://.godot/imported/R6 fuer game.glb-c0cf846adec0eaf4ef631ba586bf5a85.scn"
+path="res://.godot/imported/base.glb-afabd4deffa86cb0e403fc591a2f1c49.scn"
 
 [deps]
 
-source_file="res://R6 fuer game.glb"
-dest_files=["res://.godot/imported/R6 fuer game.glb-c0cf846adec0eaf4ef631ba586bf5a85.scn"]
+source_file="res://assets/character/base.glb"
+dest_files=["res://.godot/imported/base.glb-afabd4deffa86cb0e403fc591a2f1c49.scn"]
 
 [params]
 

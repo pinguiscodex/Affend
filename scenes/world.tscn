@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://dk1710qearksw"]
+
+[ext_resource type="PackedScene" uid="uid://dk0k3e7d4378p" path="res://assets/plattform/base.glb" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://mgtv5s5xk25u" path="res://assets/character/base.glb" id="2_rwgxs"]
+[ext_resource type="Script" uid="uid://ddwog7ptg2mar" path="res://player_movement.gd" id="3_script_player"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4wyf3"]
+size = Vector3(10.032471, 1, 9.862183)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4wyf3"]
+radius = 1.0576172
+height = 5.144287
+
+[node name="world" type="Node3D"]
+
+[node name="plattform2" parent="." instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.403512, -11.256765)
+
+[node name="plattform" parent="." instance=ExtResource("1_nnsk1")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="plattform"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008911133, 0, 0.13470459)
+shape = SubResource("BoxShape3D_4wyf3")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("3_script_player")
+
+[node name="character" parent="Player" instance=ExtResource("2_rwgxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5520215, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1568604, 0)
+shape = SubResource("CapsuleShape3D_4wyf3")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.952589, -0.51383704)
