@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cs6crp70ns32q"
-path="res://.godot/imported/animation test yo mama.glb-7f50202b46e256c2be8e4123c405b935.scn"
+path="res://.godot/imported/wpn_equipped.glb-969c6e103f32b96d7d7da604c41999bd.scn"
 
 [deps]
 
-source_file="res://animation test yo mama.glb"
-dest_files=["res://.godot/imported/animation test yo mama.glb-7f50202b46e256c2be8e4123c405b935.scn"]
+source_file="res://wpn_equipped.glb"
+dest_files=["res://.godot/imported/wpn_equipped.glb-969c6e103f32b96d7d7da604c41999bd.scn"]
 
 [params]
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=3 format=3 uid="uid://dvv2grbjkhf2l"]
 
 [ext_resource type="PackedScene" uid="uid://cs6crp70ns32q" path="res://animation test yo mama.glb" id="1_c6gwx"]
@@ -10,3 +11,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09327698, -2.3841858e-07, -
 
 [node name="R6 fuer game" parent="." instance=ExtResource("2_2dftf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5907183, 0, 4.1322203)
+=======
+[gd_scene format=3 uid="uid://dvv2grbjkhf2l"]
+
+[node name="Node3D" type="Node3D"]
+>>>>>>> e11a31a (Leons Schinken)
