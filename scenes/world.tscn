@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dk1710qearksw"]
+[gd_scene load_steps=7 format=3 uid="uid://dk1710qearksw"]
 
 [ext_resource type="PackedScene" uid="uid://dk0k3e7d4378p" path="res://assets/plattform/base.glb" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://mgtv5s5xk25u" path="res://assets/character/base.glb" id="2_rwgxs"]
 [ext_resource type="Script" uid="uid://ddwog7ptg2mar" path="res://player_movement.gd" id="3_script_player"]
+[ext_resource type="Script" uid="uid://cf03liyc5ra68" path="res://scripts/camera_movement.gd" id="4_k0juu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4wyf3"]
 size = Vector3(10.032471, 1, 9.862183)
@@ -13,12 +14,23 @@ height = 5.144287
 
 [node name="world" type="Node3D"]
 
+[node name="plattform3" parent="." instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.190987, 4.552704, 2.7549744)
+
 [node name="plattform2" parent="." instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.403512, -11.256765)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.403512, 13.527864)
+
+[node name="plattform2" parent="plattform2" instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1742067, -27.84944)
+
+[node name="plattform2" parent="plattform2/plattform2" instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.616547, -0.77463055, 14.202297)
 
 [node name="plattform" parent="." instance=ExtResource("1_nnsk1")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="plattform"]
+process_physics_priority = 1
+physics_interpolation_mode = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008911133, 0, 0.13470459)
 shape = SubResource("BoxShape3D_4wyf3")
 
@@ -32,5 +44,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5520215, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1568604, 0)
 shape = SubResource("CapsuleShape3D_4wyf3")
 
-[node name="Camera3D" type="Camera3D" parent="Player"]
+[node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.952589, -0.51383704)
+script = ExtResource("4_k0juu")
