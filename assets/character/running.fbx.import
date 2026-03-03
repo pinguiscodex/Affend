@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cdsowsv3rmq4b"
-path="res://.godot/imported/r6 riggedidirunning.fbx-8b8d882a345370abaff95cd725faaa44.scn"
+path="res://.godot/imported/running.fbx-07892f3817ee5b0c639fd5f53db68f51.scn"
 
 [deps]
 
-source_file="res://assets/character/r6 riggedidirunning.fbx"
-dest_files=["res://.godot/imported/r6 riggedidirunning.fbx-8b8d882a345370abaff95cd725faaa44.scn"]
+source_file="res://assets/character/running.fbx"
+dest_files=["res://.godot/imported/running.fbx-07892f3817ee5b0c639fd5f53db68f51.scn"]
 
 [params]
 
