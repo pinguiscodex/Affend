@@ -2,53 +2,43 @@
 
 [ext_resource type="PackedScene" uid="uid://dk0k3e7d4378p" path="res://assets/plattform/base.glb" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://mgtv5s5xk25u" path="res://assets/character/base.glb" id="2_rwgxs"]
-[ext_resource type="Script" uid="uid://dnst0bi5bg702" path="res://scenes/character_body_3d.gd" id="3_k0juu"]
-[ext_resource type="Script" uid="uid://cf03liyc5ra68" path="res://scripts/camera_movement.gd" id="4_k0juu"]
+[ext_resource type="Script" uid="uid://krqquktpcqbe" path="res://scripts/player_movement.gd" id="3_k0juu"]
+[ext_resource type="Script" uid="uid://c3veol4fc0465" path="res://scripts/camera_movement.gd" id="4_k0juu"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_71j4m"]
-height = 4.387085
+height = 5.202194
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k0juu"]
-size = Vector3(9.973145, 1, 10.169403)
+size = Vector3(9.950256, 1, 10.061035)
 
 [node name="world" type="Node3D"]
 
-[node name="plattform3" parent="." instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.190987, 4.552704, 2.7549744)
-
-[node name="plattform2" parent="." instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.403512, 13.527864)
-
-[node name="plattform2" parent="plattform2" instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1742067, -27.84944)
-
-[node name="plattform2" parent="plattform2/plattform2" instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.616547, -0.77463055, 14.202297)
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.952589, 5.7423368)
-script = ExtResource("4_k0juu")
-
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.74436235, 0)
 script = ExtResource("3_k0juu")
 
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 5.265184, 0.7004696)
+script = ExtResource("4_k0juu")
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7710571, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1007614, 0)
 shape = SubResource("CapsuleShape3D_71j4m")
 
 [node name="base" parent="CharacterBody3D" instance=ExtResource("2_rwgxs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.62056303, 0)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
-
-[node name="plattform" parent="StaticBody3D" instance=ExtResource("1_nnsk1")]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01586914, 0, -0.08580017)
-shape = SubResource("BoxShape3D_k0juu")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.85449654, -0.32001236, 0.40917933, 0.19858703, 0.9300331, 0.31299147, -0.48159045, -0.18142706, 0.85605, 10, 10, 10)
 light_color = Color(1, 0.98, 0.95, 1)
 light_energy = 1.2
 shadow_enabled = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="plattform1" parent="StaticBody3D" instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01586914, 0, -0.08580017)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.037506104, 0, -0.1262207)
+shape = SubResource("BoxShape3D_k0juu")
