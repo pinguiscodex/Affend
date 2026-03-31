@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://mgtv5s5xk25u" path="res://assets/character/base.glb" id="2_rwgxs"]
 [ext_resource type="Script" uid="uid://krqquktpcqbe" path="res://scripts/player_movement.gd" id="3_k0juu"]
 [ext_resource type="Script" uid="uid://c3veol4fc0465" path="res://scripts/camera_movement.gd" id="4_k0juu"]
+[ext_resource type="PackedScene" uid="uid://bi0b3r1k0am0d" path="res://blender/r6 riggedidiwalking.fbx" id="5_71j4m"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_71j4m"]
 height = 5.202194
