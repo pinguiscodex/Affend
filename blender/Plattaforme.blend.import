@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bhfh0uprvafrk"
-path="res://.godot/imported/r6 riggedidiwalking.blend-01f31b1cb6707b8859baf5ee60a4e04c.scn"
+uid="uid://ctagl32msfic6"
+path="res://.godot/imported/Plattaforme.blend-bb76744c8933fe9ae9c1f47fa5d2ecee.scn"
 
 [deps]
 
-source_file="res://Blenda/r6 riggedidiwalking.blend"
-dest_files=["res://.godot/imported/r6 riggedidiwalking.blend-01f31b1cb6707b8859baf5ee60a4e04c.scn"]
+source_file="res://blender/Plattaforme.blend"
+dest_files=["res://.godot/imported/Plattaforme.blend-bb76744c8933fe9ae9c1f47fa5d2ecee.scn"]
 
 [params]
 

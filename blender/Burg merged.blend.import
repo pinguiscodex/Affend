@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cwdml71eblkmu"
-path="res://.godot/imported/r6 riggedidinormal.blend-7f925b7b337fdbd972c8238d9d59e133.scn"
+uid="uid://qam528sxkbc0"
+path="res://.godot/imported/Burg merged.blend-cdafb3e185f83cdea02ddfd546a863ad.scn"
 
 [deps]
 
-source_file="res://Blenda/r6 riggedidinormal.blend"
-dest_files=["res://.godot/imported/r6 riggedidinormal.blend-7f925b7b337fdbd972c8238d9d59e133.scn"]
+source_file="res://blender/Burg merged.blend"
+dest_files=["res://.godot/imported/Burg merged.blend-cdafb3e185f83cdea02ddfd546a863ad.scn"]
 
 [params]
 

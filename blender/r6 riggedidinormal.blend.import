@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ctagl32msfic6"
-path="res://.godot/imported/Plattaforme.blend-2263b5655e4c73a9e4990e0855f9e947.scn"
+uid="uid://cwdml71eblkmu"
+path="res://.godot/imported/r6 riggedidinormal.blend-a3aceb878f89c6c4bcb621a6458e2124.scn"
 
 [deps]
 
-source_file="res://Blenda/Plattaforme.blend"
-dest_files=["res://.godot/imported/Plattaforme.blend-2263b5655e4c73a9e4990e0855f9e947.scn"]
+source_file="res://blender/r6 riggedidinormal.blend"
+dest_files=["res://.godot/imported/r6 riggedidinormal.blend-a3aceb878f89c6c4bcb621a6458e2124.scn"]
 
 [params]
 
