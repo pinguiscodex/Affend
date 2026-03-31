@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://mgtv5s5xk25u" path="res://assets/character/base.glb" id="2_rwgxs"]
 [ext_resource type="Script" uid="uid://krqquktpcqbe" path="res://scripts/player_movement.gd" id="3_k0juu"]
 [ext_resource type="Script" uid="uid://c3veol4fc0465" path="res://scripts/camera_movement.gd" id="4_k0juu"]
+[ext_resource type="PackedScene" uid="uid://bi0b3r1k0am0d" path="res://blender/r6 riggedidiwalking.fbx" id="5_71j4m"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_71j4m"]
 height = 5.202194
@@ -42,3 +43,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01586914, 0, -0.08580017)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=111901647]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.037506104, 0, -0.1262207)
 shape = SubResource("BoxShape3D_k0juu")
+
+[node name="r6 riggedidiwalking" parent="." unique_id=2103045703 instance=ExtResource("5_71j4m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, -1)
