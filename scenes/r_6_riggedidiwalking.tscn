@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://csoa3ldnnh67b"]
+
+[ext_resource type="PackedScene" uid="uid://ucwe7neiqdje" path="res://blender/r6 riggedidiwalking.fbx" id="1_howp6"]
+
+[node name="r6 riggedidiwalking" unique_id=78582452 instance=ExtResource("1_howp6")]
+
+[node name="Skeleton3D" parent="Sketchfab_model/268c021f574b474586c174597c798c0f_fbx/RootNode2/r6Rig/Object_4" parent_id_path=PackedInt32Array(1054591117) index="1" unique_id=228578974]
+bones/1/rotation = Quaternion(0.99999917, 7.574769e-09, -9.703349e-12, -0.001281321)
+bones/3/position = Vector3(-8.770762e-17, -0.010999998, -9.695068e-09)
+bones/6/rotation = Quaternion(0.67376274, 0.32101828, -0.6456207, -0.16175583)
+bones/7/position = Vector3(1.21071935e-08, 0.02061554, 7.450581e-09)
+bones/7/rotation = Quaternion(1.1920929e-07, 7.748604e-07, 3.1292439e-07, -1)
+bones/10/rotation = Quaternion(-0.5039527, 0.35528743, 0.7814341, -0.095724925)
+bones/11/position = Vector3(3.1897798e-08, 0.02061554, 5.5879354e-09)
+bones/11/rotation = Quaternion(1.4901161e-08, -8.940697e-08, 4.0605664e-07, -1)
+bones/14/position = Vector3(0.005000001, 8.626908e-05, 2.9560053e-05)
+bones/14/rotation = Quaternion(0.6485894, -0.64858854, 0.2816602, 0.28165975)
+bones/15/position = Vector3(0.020000007, 5.5879354e-09, -3.3761416e-09)
+bones/15/rotation = Quaternion(1.4901161e-07, -9.68575e-08, -1.318779e-07, -1)
+bones/18/position = Vector3(-0.005000001, 0.00010943124, 0.00029259172)
+bones/18/rotation = Quaternion(0.6580806, 0.65808105, -0.2587075, 0.25870797)
+bones/19/position = Vector3(-8.573759e-09, 7.450581e-09, 0.020000005)
+bones/19/rotation = Quaternion(-1.7285133e-07, -1.2665969e-07, -1.4901161e-07, 1)
