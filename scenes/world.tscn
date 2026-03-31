@@ -29,7 +29,7 @@ shape = SubResource("CapsuleShape3D_71j4m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.62056303, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=554598945]
-transform = Transform3D(0.85449654, -0.32001236, 0.40917933, 0.19858703, 0.9300331, 0.31299147, -0.48159045, -0.18142706, 0.85605, 10, 10, 10)
+transform = Transform3D(0.87278384, -0.31129682, 0.37629443, 0.19843523, 0.9301756, 0.30886364, -0.44596243, -0.19488113, 0.87343234, 10, 10, 10)
 light_color = Color(1, 0.98, 0.95, 1)
 light_energy = 1.2
 shadow_enabled = true
