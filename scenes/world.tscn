@@ -4,13 +4,36 @@
 [ext_resource type="PackedScene" uid="uid://mgtv5s5xk25u" path="res://assets/character/base.glb" id="2_rwgxs"]
 [ext_resource type="Script" uid="uid://krqquktpcqbe" path="res://scripts/player_movement.gd" id="3_k0juu"]
 [ext_resource type="Script" uid="uid://c3veol4fc0465" path="res://scripts/camera_movement.gd" id="4_k0juu"]
-[ext_resource type="PackedScene" uid="uid://bi0b3r1k0am0d" path="res://blender/r6 riggedidiwalking.fbx" id="5_71j4m"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_71j4m"]
 height = 5.202194
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k0juu"]
 size = Vector3(9.950256, 1, 10.061035)
+
+[sub_resource type="GDScript" id="GDScript_k0juu"]
+script/source = "extends StaticBody3D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	while true:
+s		var velocity.y= velocity.y
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="Curve3D" id="Curve3D_qfnet"]
+closed = true
+bake_interval = 92.1
+_data = {
+"points": PackedVector3Array(0, 20, 0, 0, 3, 0, 0, 20, 0),
+"tilts": PackedFloat32Array(0)
+}
+point_count = 1
 
 [node name="world" type="Node3D" unique_id=1806395013]
 
@@ -44,4 +67,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01586914, 0, -0.08580017)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.037506104, 0, -0.1262207)
 shape = SubResource("BoxShape3D_k0juu")
 
-[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=1418043742]
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=365562542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.35653877, -16.911018)
+script = SubResource("GDScript_k0juu")
+
+[node name="plattform1" parent="StaticBody3D2" unique_id=1258850430 instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01586914, 0, -0.08580017)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=942852814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.037506104, 0, -0.1262207)
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="Path3D" type="Path3D" parent="StaticBody3D2" unique_id=418139202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.2328644, 0)
+curve = SubResource("Curve3D_qfnet")
